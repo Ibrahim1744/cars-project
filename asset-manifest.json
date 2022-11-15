@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cars-project/static/css/main.f86fcfd8.css",
+    "main.js": "/cars-project/static/js/main.09616a65.js",
+    "index.html": "/cars-project/index.html",
+    "main.f86fcfd8.css.map": "/cars-project/static/css/main.f86fcfd8.css.map",
+    "main.09616a65.js.map": "/cars-project/static/js/main.09616a65.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f86fcfd8.css",
+    "static/js/main.09616a65.js"
+  ]
+}
