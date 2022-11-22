@@ -1,0 +1,16 @@
+.type-of-cars-text{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.type-of-cars-text h2{
+  color: var(--title-color);
+  font-weight: 500;
+}
+.type-of-cars-text p{
+  line-height: 1.4;
+  font-size: 16px;
+  font-weight: 400;
+}

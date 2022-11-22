@@ -1,0 +1,92 @@
+.contact-rotana{
+  width: 80%;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+margin-top: 50px;
+margin-bottom: 50px;
+}
+.contact-rotana-text{
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-top: 1px solid var(--e-global-color-primary);
+  border-left: 1px solid var(--e-global-color-primary);
+}
+.contact-rotana-text-row{
+  display: flex;
+  gap: 25px;
+}
+.contact-rotana-text-row svg{
+  color: var(--e-global-color-primary);
+  font-size: 25px;
+}
+.contact-rotana-text-row-icon{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact-rotana-text form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-rotana-text form input{
+  max-width: 360px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px green dashed;
+  font-size: 16px;
+  padding: 5px;
+  height: 35px;
+}
+.contact-rotana-text form input::placeholder{
+  color: var(--e-global-color-primary);
+}
+.contact-rotana-text form textarea{
+  height: 100px;
+  max-width: 360px;
+border: none;
+border-bottom: 1px green dashed;
+}
+.contact-rotana-text form button{
+  color: white;
+  background-color: var(--e-global-color-primary);
+  padding: 5px 10px;
+  height: 45px;
+  width: 230px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+.contact-rotana-backgronud{
+  width: 100%;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1614288532696-203f89dc0db4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FyJTIwcG5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width:1400px) {
+    .contact-rotana{
+      width: 95%;
+
+    }
+
+}
+@media (max-width:980px) {
+  .contact-rotana{
+    width: 95%;
+
+  }
+  .contact-rotana{
+    grid-template-columns: 1fr;
+  }
+  .contact-rotana-backgronud{
+    display: none;
+  }
+
+}

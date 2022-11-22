@@ -1,0 +1,193 @@
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  background-color: white;
+}
+.car-title{
+  text-align: center;
+}
+.car-title{
+color: var(--e-global-color-primary);
+margin: 50px;
+}
+.card{
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
+  border: 1px solid gainsboro;
+  padding: 2px;
+  position: relative;
+
+}
+.card:hover{
+  box-shadow: 0 3px 8px 8px gainsboro;
+}
+.top-card{
+  height:250px;
+  width: 100%;
+}
+.top-card img{
+  height: 100%;
+  object-fit: cover;
+}
+.bottom-card{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transform: translateY(10px);
+  gap: 25px;
+
+}
+.bottom-card .car-logo{
+  display: flex;
+  align-items: center;
+}
+.bottom-card .car-logo h3{
+  font-size: 16px;
+  color: var(--e-global-color-secondary);
+}
+.bottom-card .car-logo img{
+  width: 40px;
+}
+.car-icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.car-icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  border-right: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+  padding: 10px;
+
+}
+.car-icon svg{
+  color: var(--e-global-color-primary);
+  font-size: 18px;
+}
+.bottom-card .buttons{
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.bottom-card .buttons button{
+  padding: 8px;
+  border: none;
+  outline: none;
+  background-color: var(--e-global-color-text);
+  cursor: pointer;
+}
+.bottom-card .buttons button a{
+  color: white;
+
+}
+.bottom-card .buttons .whatsapp-btn{
+  background-color: var(--e-global-color-primary);
+  color: white !important;
+}
+.bottom-card .buttons .whatsapp-btn a{
+  color: white !important;
+}
+
+.car-price{
+  position:absolute;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+  background-color: var(--e-global-color-primary);
+  padding: 10px;
+  border-bottom-left-radius: 30px;
+  width: 50%;
+  text-align: center;
+}
+.car-price h4{
+  color: white !important;
+}
+.see-more{
+  display: block;
+  background-color: var(--e-global-color-primary);
+  border: none;
+  outline: none;
+  padding: 10px 12px;
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.choices{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+.choice{
+  position: relative;
+  max-height: 300px;
+  object-fit: cover;
+}
+.choice img{
+  height: 100%;
+}
+.choice-overlay{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+  
+
+}
+.choice:hover .choice-overlay{
+  background-color: rgba(0, 0, 0, 0);
+}
+.abs{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* queries */
+@media (max-width:1030px) {
+  .cards{
+    grid-template-columns: repeat(2,1fr);
+  
+  }
+  .choices{
+    grid-template-columns: repeat(2,1fr);
+
+  }
+}
+
+@media (max-width:780px) {
+  .cards{
+    grid-template-columns: repeat(1,1fr);
+  
+  }
+  .choices{
+    grid-template-columns: repeat(1,1fr);
+
+  }
+  .car-icon svg{
+    font-size: 50px;
+  }
+  .card{
+    height: 500px;
+
+  }
+  .bottom-card .buttons button{
+    min-width: 150px;
+  }
+}

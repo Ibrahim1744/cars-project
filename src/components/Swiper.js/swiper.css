@@ -1,0 +1,46 @@
+.swiper1{
+  width: 100%;
+min-height: 35vh;
+  background-color: var(--background-color-with-alpha);
+}
+.swiper-content{
+  text-align: center;
+display: flex;
+flex-direction: column;
+
+}
+.swiper-content h1{
+  color: var(--e-global-color-primary);
+  font-weight: 500;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+.swiper-content p{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.swiper-content p span{
+  font-weight: 600;
+}
+.swiper-header{
+  height: 70%;
+}
+.cars-swiper{
+  height: 150px !important;
+}
+.cars-swiper img{
+  width: 150px;
+}
+
+/* queries */
+
+@media (max-width:780px) {
+  .swiper-content h1{
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .swiper-content p{
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,109 @@
+.rotana-showcase-2{
+  height: 110vh;
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+}
+.left-showcase2{
+  width: 50%;
+  height: 100%;
+
+}
+.show-when-small{
+  display: none;
+}
+.left-showcase2-top{
+  height: 50%;
+  display: flex;
+flex-direction: column;
+gap: 20px;
+
+}
+.right-showcase2{
+  width: 50%;
+  height: 100%;
+}
+.right-showcase2-top{
+  height: 50%;
+  background: url('https://www.bugatti.com/fileadmin/_processed_/e/e/csm_og-image_b5397aa5e3.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.right-showcase2-bottom{
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  
+}
+.right-showcase2-bottom h3{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+.right-showcase2-bottom-text{
+  min-height: 60%;
+  overflow-y: scroll;
+}
+.right-showcase2-bottom-text p{
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-weight: 300;
+  font-size: 13px;
+}
+.accordion-title{
+  margin-bottom: 15px;
+}
+
+/* queries */
+
+@media (max-width:990px) {
+  .rotana-showcase-2 p{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.3;
+  }
+  .rotana-showcase-2 h2{
+    font-size: 22px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width:855px) {
+  .right-showcase2-top{
+    display: none;
+  }
+  .rotana-showcase-2{
+    flex-direction: column;
+    min-height: 100vh;
+
+  }
+  .left-showcase2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+  }
+   .right-showcase2{
+    width: 100%;
+    height: 100%;
+  
+  }
+
+}
+@media (max-width:740px) {
+  
+  .left-showcase2{
+    width: 100%;
+    height: 100%;
+   
+    
+  }
+  .rotana-showcase2{
+  }
+.left-showcase2-bottom{
+  margin-top: 40px;
+}
+
+}
